@@ -1,0 +1,243 @@
+.headerCont{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/cat1.jpg);
+    background-size: contain!important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(64, 85, 47);
+    background-size: cover!important;
+}
+.navbar-brand{
+    display: flex ;
+    margin-left: 50px;
+}
+.navbar-brand span {
+    margin: 10px;
+    height: fit-content;
+    font-size: 2rem;
+    color: rgb(255, 61, 129);
+}
+#navbarNav{
+    flex-direction: column-reverse;
+    flex-grow: 0;
+    margin-right: 50px;
+}
+.nav-item{
+    padding: 0 15px;
+}
+.nav-item a{
+    font-size: 1.5rem;
+}
+.heroText{
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    color: white;
+    text-align: center;
+}
+.buttonCont{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.buttonCont button{
+    border: none;
+    background-color: rgb(255, 61, 129);
+    color: white;
+    padding: 15px 60px;
+    border-radius: 15px;
+}
+.heroText h1{
+    font-size: 8rem;
+}
+.heroText h3{
+font-size: 2.5rem;
+font-weight: 400;
+}
+.bg2{
+    height: 100vh;
+    width: 100%;
+}
+.bg2 img{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.sect2text {
+    top: 20%;
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    position: relative;
+    color: white;
+    padding-left: 150px;
+    flex-direction: column;
+}
+.sect2text h1{
+    font-size: 7rem;
+}
+.sect2text h3{
+font-size: 2.5rem;
+font-weight: 400;
+}
+.bg3{
+    height: 100vh;
+    width: 100%;
+}
+.bg3 img{
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}
+.sect3text{
+    margin-top: 25vh;
+    right: 10%;
+    position: inherit;
+    width: fit-content;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.sect3text h1{
+    font-size: 4.5rem;
+}
+.sect3text h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.featuredStories{
+    background-color: rgb(255, 141, 181);
+    display: inline-grid;
+    height: 120vh;
+    width: 100%;
+    padding: 50px;
+    color: white;
+}
+.featuredStories h1, h4{
+    height: fit-content;
+    width: fit-content;
+}
+.fs1Text{
+    float: right;
+}
+.fs2 img{
+    float: right;
+}
+.fs1 , fs2{
+    text-align: center;
+}
+.footer {
+    background-color: rgb(255, 61, 129);
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    color: white;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.list-container {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.social ul {
+    text-align: center;
+}
+
+.nav-links ul {
+    text-align: center;
+}
+
+.nav-links li {
+    margin: 10px;
+}
+
+.address ul {
+    text-align: center;
+}
+.list a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .bg1 img{
+        object-fit: contain;
+        background-color: rgb(64, 85, 47);
+    }
+    .heroText{
+        right: 0;
+        text-align: center;
+        width: 100vw; 
+        top: 40%;
+    }
+    .heroText h1{
+        font-size: 3rem;
+    }
+    .heroText h3{
+        font-size: 1rem;
+    }
+    .bg2 img{
+        object-fit: contain;
+        background-color: orangered;
+    }
+    .sect2text{
+        width: 100%;
+        padding-left: 0;
+        top: 40%;
+    }
+    .sect2text h1{
+        font-size: 3rem;
+    }
+    .sect2text h3{
+        font-size: 1rem;
+    }
+    .bg3 img{
+        object-fit: contain;
+        background-color: skyblue;
+    }
+    .sect3text{
+        width: 100%;
+        right: 0;
+        margin-top: 35vh;
+    }
+    .sect3text h1{
+        font-size: 3rem;
+    }
+    .sect3text h3{
+        font-size: 1rem;
+    }
+    .featuredStories{
+        height: 200vh;
+    }
+    .featuredStories img{
+        margin-bottom: 20px;
+    }
+    .footer{
+        height: 350px;
+    }
+    #navbarNav{
+        margin-right: 0;
+    }
+    .navbar-nav{
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .nav-item a{
+        font-size: 1rem;
+    }
+}
