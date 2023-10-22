@@ -27,3 +27,9 @@
 .card img{
     height: 250px;
 }
+@media screen and (max-width: 768px) {
+    .colLast{
+        height: 200vh;
+        margin-bottom: 100px;
+    }
+}
