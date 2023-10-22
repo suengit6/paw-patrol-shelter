@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPatrol Shelter</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/adoptionForm.css">
+</head>
+<body>
+    <div class="header ">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/pawpatrol.png" height="70px" width="70px">
+                    <span>PawPatrol</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../webpages/animalsList.html">Adopt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../webpages/donate.html">Donate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../webpages/volunteer.html">Volunteer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../webpages/about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="formApplication">
+        <div class="container mt-5">
+            <h1 class="text-center">Animal Adoption Form</h1>
+            <div class="stepsVisualCont">
+                <div class="stepVis sOne">
+                    <div class="stepNum">
+                    <h2>1</h1>
+                    </div>
+                    <p>Personal Information</p>
+                </div>
+                <div class="stepVis sTwo">
+                    <div class="stepNum">
+                        <h2>2</h1>
+                        </div>
+                    <p>Adoption/Foster Capability</p>
+                </div>
+                <div class="stepVis sThree">
+                    <div class="stepNum">
+                        <h2>3</h1>
+                        </div>
+                    <p>Finish Application</p>
+                </div>
+            </div>
+            <form id="adoptionForm" novalidate>
+                <!-- Step 1: Personal Information -->
+                <div class="step step-1">
+                    <div class="step1Inputs">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            <div class="invalid-feedback">Please enter your first name.</div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="lastName" class "form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            <div class="invalid-feedback">Please enter your last name.</div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phoneNum" required>
+                            <div class="invalid-feedback">Please enter your phone number.</div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" name="address" required>
+                            <div class="invalid-feedback">Please enter your address.</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn btn-primary next-step" data-step="2">Next</button>
+                    </div>
+                </div>
+    
+                <!-- Step 2: Adoption/Foster Capability -->
+                <div class="step step-2">
+                    <h2>Step 2: Adoption/Foster Capability</h2>
+                    <div class="mb-3">
+                        <label class="form-label">Are you interested in adoption or fostering?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interest" value="adoption" required>
+                            <label class="form-check-label">Adoption</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="interest" value="fostering" required>
+                            <label class="form-check-label">Fostering</label>
+                        </div>
+                        <div class="invalid-feedback">Please select an option.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label">Do you have experience with adoption or fostering animals?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" value="yes" required>
+                            <label class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" value="no" required>
+                            <label class="form-check-label">No</label>
+                        </div>
+                        <div class="invalid-feedback">Please select an option.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label">Do you or anyone in your household have asthma or any known allergies to cats or dogs?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="allergies" value="yes" required>
+                            <label class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="allergies" value="no" required>
+                            <label class="form-check-label">No</label>
+                        </div>
+                        <div class="invalid-feedback">Please select an option.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label">Is everyone in your household aware of and agreeable to your interest in adopting or fostering?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="awareness" value="yes" required>
+                            <label class="form-check-label">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="awareness" value="no" required>
+                            <label class="form-check-label">No</label>
+                        </div>
+                        <div class="invalid-feedback">Please select an option.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="petsInHousehold" class="form-label">How many cats or dogs do you currently have in your household?</label>
+                        <input type="number" class="form-control" id="petsInHousehold" name="petsInHousehold" required>
+                        <div class="invalid-feedback">Please enter the number of pets.</div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn btn-primary previous-step" data-step="1">Previous</button>
+                        <button type="button" class="btn btn-primary next-step" data-step="3">Next</button>
+                    </div>
+                </div>
+    
+                <!-- Step 3: Finish Application -->
+                <div class="step step-3">
+                    <h2>Step 3: Finish Application</h2>
+                    <div class="mb-3">
+                        <label for="employmentInfo" class="form-label">Please list your employment information</label>
+                        <textarea class="form-control" id="employmentInfo" name="employmentInfo" rows="4" required></textarea>
+                        <div class="invalid-feedback">Please provide your employment information.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="livingInfo" class="form-label">Please list your living information</label>
+                        <textarea class="form-control" id="livingInfo" name="livingInfo" rows="4" required></textarea>
+                        <div class="invalid-feedback">Please provide your living information.</div>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="landlordInfo" class="form-label">If you rent, please provide landlord information</label>
+                        <textarea class="form-control" id="landlordInfo" name="landlordInfo" rows="4"></textarea>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="leaseInfo" class="form-label">If you rent, please provide a landlord approval letter or the section of your lease that states pets are allowed</label>
+                        <input type="file" class="form-control" id="leaseInfo" name="leaseInfo">
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="dogWalkingPlan" class="form-label">If you are interested in dogs, how will you plan the time and place to walk the dog?</label>
+                        <textarea class="form-control" id="dogWalkingPlan" name="dogWalkingPlan" rows="4"></textarea>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label">If you have a reference letter, please upload it</label>
+                        <input type="file" class="form-control" id="referenceLetter" name="referenceLetter">
+                    </div>
+    
+                    <div class="mb-3">
+                        <label class="form-label">Please read the acknowledgment</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="acknowledgment" value="read" required>
+                            <label class="form-check-label">I have read and agree to the acknowledgment</label>
+                        </div>
+                        <div class="invalid-feedback">Please acknowledge the statement.</div>
+                    </div>
+    
+                    <div class="button">
+                        <button type="button" class="btn btn-primary previous-step" data-step="2">Previous</button>
+                        <button type="submit" class="btn btn-success">Submit Application</button>
+                    </div>
+                </div>
+            </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="../scripts/form.js" defer></script>
+
+
+</body>
+</html>

@@ -109,69 +109,27 @@ font-weight: 400;
     font-size: 2.5rem;
     font-weight: 400;
 }
-.featuredStories{
-    background-color: rgb(255, 141, 181);
-    display: inline-grid;
-    height: 120vh;
+.carousel{
     width: 100%;
-    padding: 50px;
-    color: white;
+    height: 100vh;
 }
-.featuredStories h1, h4{
-    height: fit-content;
-    width: fit-content;
+.carousel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.fs1Text{
-    float: right;
+.carousel-item{
+    height: 100%;
+    width: 100%;
 }
-.fs2 img{
-    float: right;
+.carousel-item h5, p{
+    text-shadow: 1px 1px black;
 }
-.fs1 , fs2{
-    text-align: center;
-}
-.footer {
-    background-color: rgb(255, 61, 129);
-    background-image: url('your-background-image.jpg');
-    background-size: cover;
-    color: white;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+.carousel-inner{
+    width: 100%;
+    height: 100%;
 }
 
-.list-container {
-    grid-column: span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.list {
-    list-style: none;
-    padding: 0;
-}
-
-.social ul {
-    text-align: center;
-}
-
-.nav-links ul {
-    text-align: center;
-}
-
-.nav-links li {
-    margin: 10px;
-}
-
-.address ul {
-    text-align: center;
-}
-.list a{
-    color: white;
-    text-decoration: none;
-}
 
 @media screen and (max-width: 768px) {
     .bg1 img{
@@ -182,52 +140,65 @@ font-weight: 400;
         right: 0;
         text-align: center;
         width: 100vw; 
-        top: 40%;
+        top: 35%;
     }
     .heroText h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .heroText h3{
-        font-size: 1rem;
+        font-size: 1.5rem;
+    }
+    .bg2{
+        background-color: orangered;
     }
     .bg2 img{
         object-fit: contain;
-        background-color: orangered;
+        margin-top: 25vh;
+        height: auto;
     }
     .sect2text{
-        width: 100%;
-        padding-left: 0;
-        top: 40%;
+        padding-left: 10PX;
+        top: 30%;
     }
     .sect2text h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .sect2text h3{
         font-size: 1rem;
     }
+    .buttonCont2{
+        margin-top: 25vh;
+        margin-left: 25vw;
+    }
+    .bg3{
+        background-color: skyblue;
+    }
     .bg3 img{
         object-fit: contain;
-        background-color: skyblue;
+        height: auto;
+        margin-top: 25vh;
     }
     .sect3text{
         width: 100%;
         right: 0;
-        margin-top: 35vh;
+        margin-top: 25vh;
     }
     .sect3text h1{
-        font-size: 3rem;
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
     }
     .sect3text h3{
         font-size: 1rem;
     }
-    .featuredStories{
-        height: 200vh;
+    .buttonCont3{
+        margin-top: 25vh;
     }
-    .featuredStories img{
-        margin-bottom: 20px;
+    .carousel{
+        height: 100vh;
     }
-    .footer{
-        height: 350px;
+    .active img{
+        width: 100%;
+        object-fit: cover;
     }
     #navbarNav{
         margin-right: 0;

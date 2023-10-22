@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPatrol Shelter</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="../css/animalsList.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+
+</head>
+
+<body>
+
+    <div class="homepage container-fluid">
+        <div class="header ">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/pawpatrol.png" height="70px" width="70px">
+                        <span>PawPatrol</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="../webpages/animalInfo.htmlnavbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../webpages/animalsList.html">Adopt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../webpages/animalInfo.html">Donate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../webpages/volunteer.html">Volunteer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../webpages/about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row p-0 m-0">
+            <div class="col-lg-2">
+                <div class="filter">
+                    <div class="dog">
+                        <button id="dog" onclick="filterDog()">Dogs</button>
+                    </div>
+                    <div class="cat">
+                        <button id="cat" onclick="filterCat()" style="background-color: pink;">Cats</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-cats-coming-3712095.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-alexas-fotos-2173872.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-edgar-santana-12831255.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-amber-janssens-6897077.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-alina-vilchenko-2698519.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-cats-coming-3712095.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-tan-danh-866496.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-rhea-hazel-13722001.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-rhea-hazel-13722001.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-alice-castro-1835008.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-amber-janssens-6897077.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <a href="../webpages/animalInfo.html">
+                        <img src="../images/ppspics/pexels-tranmautritam-384555.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="../scripts/filter.js"></script>
+
+</body>
+
+</html>

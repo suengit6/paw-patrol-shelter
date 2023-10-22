@@ -1,0 +1,15 @@
+.volunteerCont{
+    text-align: center;
+}
+.volunteerCont h1{
+    margin-top: 50px;
+}
+.volImages{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.volImages img{
+    height: 300px;
+}
