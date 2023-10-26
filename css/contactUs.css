@@ -1,12 +1,4 @@
-.container{
-    
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-}
-input{
-    margin: 20px;
-    border-radius: 30px;
+input{      
     border: transparent;
     background-color: rgb(216, 187, 211);
     
@@ -15,7 +7,6 @@ input{
     color: white;
 }
 textarea , button, input{
-    border-radius: 40px;
     border: transparent;
     background-color: rgba(164, 142, 242, 0.783);
     color: white;
@@ -29,13 +20,8 @@ input, textarea, button{
     opacity: 0.8;
 }
 h1{
-    margin-left: 17px;
     color: white;
 }
-a{
-    height: fit-content;
-    width: fit-content;
-}
-button{
-    padding: 0 150px;
+@media screen and (max-width: 768px) {
+    
 }

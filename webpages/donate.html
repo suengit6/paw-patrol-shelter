@@ -48,64 +48,57 @@
         </nav>
     </div>
 
-    <div class="container p-0 m-0">
-        <div class="row p-0 m-0">
-            <div class="col1 col-lg-3 p-0">
-                <div class="buttons"">
-                    <button onclick="oneTime()" class="oneTime">One-time Donation</button>
-                    <button onclick="monthly()" class="monthly">Monthly Donation</button>
-                </div>
+    <div class="container">
+            <div class="buttons">
+                <button onclick="oneTime()" class="oneTime">One-time Donation</button>
+                <button onclick="monthly()" class="monthly">Monthly Donation</button>
             </div>
-            <div class="col p-0">
-                <div class="imgCont">
-                    <img src="../images/ppspics/catndod2.png">
-                </div>
-                <div class="container">
-                    <h1>Support Our Animal Shelter</h1>
-                    <p>Choose an amount to donate:</p>
-                    <form id="donation-form" action="donationSuccess.html">
-                        <div class="donation-option">
-                            <input type="radio" id="donate-25" name="donation-amount" value="25" required>
-                            <label for="donate-25">$25 - Feed a dog for a week</label>
-                        </div>
-                        <div class="donation-option">
-                            <input type="radio" id="donate-50" name="donation-amount" value="50">
-                            <label for="donate-50">$50 - Provide medical care for a cat</label>
-                        </div>
-                        <div class="donation-option">
-                            <input type="radio" id="donate-100" name="donation-amount" value="100">
-                            <label for="donate-100">$100 - Shelter maintenance</label>
-                        </div>
-                        <div class="donation-option">
-                            <input type="radio" id="donate-500" name="donation-amount" value="500">
-                            <label for="donate-500">$500 - Rescue and rehabilitation</label>
-                        </div>
-                        <div class="donation-option">
-                            <input type="radio" id="donate-1000" name="donation-amount" value="1000">
-                            <label for="donate-1000">$1000 - Support for adoption programs</label>
-                        </div>
-                        <p>Payment method:</p>
-                        <div class="payment-option">
-                            <input type="radio" id="paypal" name="payment-method" value="paypal">
-                            <label for="paypal">PayPal</label>
-                        </div>
-                        <div class="payment-option">
-                            <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
-                            <label for="credit-card">Credit Card</label>
-                            <div class="credit-card-input">
-                                <label for="credit-card-number">Credit Card Number:</label>
-                                <input type="text" id="credit-card-number" name="credit-card-number" placeholder="1234 5678 9012 3456" required>
-                            </div>
-                        </div>
-                        <div class="buttons">
-                        <button type="submit" style="background-color: deepskyblue;">Donate</button>
-                        </div>
-                    </form>
-                </div>
+            <h1>Support Our Animal Shelter</h1>
+            <div class="imgCont">
+                <img src="../images/ppspics/catndod2.png">
             </div>
-        </div>
+                            <p>Choose an amount to donate:</p>
+                            <form id="donation-form" action="../webpages/adoptionComplete.html">
+                                <div class="donation-option">
+                                    <input type="radio" id="donate-25" name="donation-amount" value="25" required>
+                                    <label for="donate-25">$25 - Feed a dog for a week</label>
+                                </div>
+                                <div class="donation-option">
+                                    <input type="radio" id="donate-50" name="donation-amount" value="50">
+                                    <label for="donate-50">$50 - Provide medical care for a cat</label>
+                                </div>
+                                <div class="donation-option">
+                                    <input type="radio" id="donate-100" name="donation-amount" value="100">
+                                    <label for="donate-100">$100 - Shelter maintenance</label>
+                                </div>
+                                <div class="donation-option">
+                                    <input type="radio" id="donate-500" name="donation-amount" value="500">
+                                    <label for="donate-500">$500 - Rescue and rehabilitation</label>
+                                </div>
+                                <div class="donation-option">
+                                    <input type="radio" id="donate-1000" name="donation-amount" value="1000">
+                                    <label for="donate-1000">$1000 - Support for adoption programs</label>
+                                </div>
+                                <p>Payment method:</p>
+                                <div class="payment-option">
+                                    <input type="radio" id="paypal" name="payment-method" value="paypal">
+                                    <label for="paypal">PayPal</label>
+                                </div>
+                                <div class="payment-option">
+                                    <input type="radio" id="credit-card" name="payment-method" value="credit-card" required>
+                                    <label for="credit-card">Credit Card</label>
+                                    <div class="credit-card-input">
+                                        <label for="credit-card-number">Credit Card Number:</label>
+                                        <input type="text" id="credit-card-number" name="credit-card-number" placeholder="1234 5678 9012 3456"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button type="submit" style="background-color: deepskyblue;">Donate</button>
+                                </div>
+                            </form>
     </div>
-    <div class="footerCont container-fluid p-0">
+    <div class="footerCont m-0 p-0">
         <footer class="footer">
             <div class="list-container social">
                 <ul class="list">

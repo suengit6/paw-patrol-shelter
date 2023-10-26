@@ -1,9 +1,9 @@
 .homepage{
     padding: 0!important;
 }
-.header span{
+.navbar-brand span{
     font-size: 2rem;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .navbar{
     background-image: linear-gradient(to right, rgb(255, 116, 202) , rgb(129, 198, 255));

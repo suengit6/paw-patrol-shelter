@@ -8,8 +8,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        
-    <link rel="stylesheet" href="../css/animalsList.css">
+
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="../css/animalsList.css"> -->
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="icon" type="image/x-icon" href="../images/pawpatrol.png">
@@ -19,6 +21,7 @@
 <body>
 
     <div class="homepage container-fluid">
+
         <div class="header ">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
@@ -26,17 +29,17 @@
                         <img src="../images/pawpatrol.png" height="70px" width="70px">
                         <span>PawPatrol</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="../webpages/animalInfo.htmlnavbarNav"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../webpages/animalsList.html">Adopt</a>
+                                <a class="nav-link active" aria-current="page" href="webpages/animalsList.html">Adopt</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../webpages/animalInfo.html">Donate</a>
+                                <a class="nav-link" href="../webpages/donate.html">Donate</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../webpages/volunteer.html">Volunteer</a>
@@ -50,194 +53,227 @@
             </nav>
         </div>
 
-        <div class="row p-0 m-0">
-            <div class="col-lg-2">
-                <div class="filter">
-                    <div class="dog">
-                        <button id="dog" onclick="filterDog()" style="background-color: pink;">Dogs</button>
-                    </div>
-                    <div class="cat">
-                        <button id="cat" onclick="filterCat()">Cats</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2> Mika</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Coco</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Lala</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Chibi</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Steve</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Happy</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col colLast">
-                <div class="card" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog6.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Kisses</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Grey</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog8.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Cassie</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col colLast p-0 m-0">
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog9.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Molly</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Quen</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="card shadow-sm" style="width: 18rem;">
-                    <a href="../webpages/animalInfo.html">
-                        <img src="../images/ppspics/dog2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h2>Ice</h2>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="footerCont container-fluid p-0">
-                <footer class="footer">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-2 col-12 mb-4">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="list-container social">
-                                <ul class="list">
-                                    <li><a href="https://www.facebook.com">Facebook</a></li>
-                                    <li><a href="https://www.twitter.com">Twitter</a></li>
-                                    <li><a href="https://www.instagram.com">Instagram</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                            <button id="dog" class="rounded" onclick="filterDog()" style="background-color: pink;">Dogs</button>
+                            <button id="cat" class="rounded" onclick="filterCat()">Cats</button>
 
-                        <div class="col-md-4">
-                             <div class="list-container nav-links">
-                               <ul class="list">
-                                 <li><a href="/about">About</a></li>
-                                 <li><a href="webpages/animalsList.html">Adopt</a></li>
-                                 <li><a href="/donate">Donate</a></li>
-                                 <li><a href="webpages/volunteer. html">Volunteer</a></li>
-                              </ul>
 
-                            </div>
-                       </div>
-
-                       <div class="col-md-4">
-                        <div class="list-container address">
-                            <ul class="list">
-                                <li>1200 Jorge Bocobo ST.</li>
-                                <li>United Nation</li>
-                                <li>Ermita 679, 1000</li>
-                            </ul>
-                        </div>
-
-                       </div>
+    
                     </div>
-                   
-            
-                   
-            
-                   
-                </footer>
+                </div>
+                </div>
+                <div class="col-lg-10 col-12">
+                    <ul class="list-unstyled row justify-content-lg-evenly justify-content-lg-center align-items-stretch">
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <p class="card-text">
+                                        Some quick example text to build on the card title and make up the bulk of
+                                        the card's content.
+                                    </p>
+                                    <a href="../webpages/adoptionForm.html">
+                                        <button>Adopt Now</button>
+                                    </a>
+                                    <a href="../webpages/contactUs.html">
+                                        <button>Contact Us</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
-
-
+        
     </div>
-
+    
+    <div class="footerCont container-fluid p-0">
+        <footer class="footer">
+            <div class="list-container social">
+                <ul class="list">
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                </ul>
+            </div>
+    
+            <div class="list-container nav-links">
+                <ul class="list">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="webpages/animalsList.html">Adopt</a></li>
+                    <li><a href="/donate">Donate</a></li>
+                    <li><a href="webpages/volunteer.html">Volunteer</a></li>
+                </ul>
+            </div>
+    
+            <div class="list-container address">
+                <ul class="list">
+                    <li>1200 Jorge Bocobo ST.</li>
+                    <li>United Nation</li>
+                    <li>Ermita 679, 1000</li>
+                </ul>
+            </div>
+        </footer>
+    </div>        
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
