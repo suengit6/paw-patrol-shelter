@@ -1,9 +1,25 @@
-.container h1{
-    margin-bottom: 50px;
+h1{ 
+    font-size: 50px;
+    font-weight: 700;}
+
+.text-pic{
+     text-align: center;}
+.our{
+    
+    justify-content: center;
 }
-.container{
-    margin-bottom: 25vh;
+.about-text{
+    font-size: 40px;
+
 }
-.row mt-4{
-    margin-bottom: 50px;
+.row mt-2 img{
+    border-style: solid;
+    border-radius: 10px;
+}
+.about-pics img{
+    height: 200px;
+}
+.about-pics p{
+    
+    font-style: italic;
 }

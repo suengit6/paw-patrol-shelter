@@ -19,8 +19,9 @@
 .footerCont{
     background-color: rgb(255, 61, 129);
     background-image: url(../images/pawpatrol.png);
-    background-size: contain;
+    background-size: 100px;
     background-repeat: no-repeat;
+    background-position: bottom left;
 }
 .list-container ul{
     height: 100%;

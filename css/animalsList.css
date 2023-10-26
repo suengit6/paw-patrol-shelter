@@ -27,9 +27,17 @@
 .card img{
     height: 250px;
 }
+.card-text span{
+    font-weight: 400;
+}
 @media screen and (max-width: 768px) {
-    .colLast{
-        height: 200vh;
+    .colLast {
+        height: 100vh;
         margin-bottom: 100px;
     }
+    .col{
+        height:100vh ;
+        margin-bottom: 100px;
+    }
+    .list-container{text-align: center;}
 }

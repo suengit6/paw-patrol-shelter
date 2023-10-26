@@ -1,11 +1,57 @@
-.message {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    margin-bottom: 25vh;
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+   
+    
+  }
+.text-overlay h1 {
+    text-shadow: 2px 2px white;
+    font-family: 'agbalumo';
+    font-size: 24px;
+    margin: 0;
+  
 }
-.message img{
-    height: 70vh;
+.text-overlay p{
+    font-family: 'agbalumo';
+    font-size: 16px;
 }
+.image-container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    
+
+   
+    
+  }
+.image-container img{
+  
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+       
+  }
+      
+
+
+
+
+
+      @media (min-width: 768px) {
+        .text-overlay h1 {
+          font-size: 50px; /* Adjust font size for larger screens */
+        }
+      
+        .text-overlay p {
+          font-size: 20px; /* Adjust font size for larger screens */
+        }
+      
+        .image-container img {
+          max-width: 90%;
+          height: auto;
+        }
+      }
