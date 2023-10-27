@@ -7,11 +7,30 @@
 }
 
 button {
+
    cursor: pointer; 
    border-radius: 20px;
    border: transparent;
    background-color: pink;
 }
 .volImages img{
-    width: 100%;
+    border: 1px solid palevioletred !important;
+    border-radius: 4px;
+    padding: 19px;
+    box-shadow: 0 4px 8px 0 rgba(203, 51, 150, 0.2), 0 6px 20px 0 rgba(222, 19, 151, 0.19);
+    width: 100%
+
 }
+img{
+    width: 100%;
+    object-fit: cover;
+}
+img:hover {
+    transform: scaleX(-1);
+  }
+
+
+
+
+
+

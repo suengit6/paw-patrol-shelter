@@ -18,10 +18,13 @@ input, textarea, button{
     background-image: url(../images/girl.jpg);
     background-size: cover;
     opacity: 0.8;
+    padding-bottom: 20vh;
 }
 h1{
     color: white;
 }
-@media screen and (max-width: 768px) {
-    
-}
+/* @media screen and (min-width: 2560px) {
+    .bg{
+        height: 100vh;
+    }
+} */

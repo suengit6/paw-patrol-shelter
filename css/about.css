@@ -3,14 +3,10 @@ h1{
     font-weight: 700;}
 
 .text-pic{
-     text-align: center;}
-.our{
-    
-    justify-content: center;
+     text-align: center;
 }
 .about-text{
     font-size: 40px;
-
 }
 .row mt-2 img{
     border-style: solid;
@@ -18,8 +14,10 @@ h1{
 }
 .about-pics img{
     height: 200px;
+    width: 100%;
+    object-fit: cover;
 }
 .about-pics p{
-    
+    text-align: center;
     font-style: italic;
 }
