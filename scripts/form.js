@@ -1,5 +1,5 @@
 function form() {
-    // JavaScript to handle form steps
+    
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.getElementById("adoptionForm");
         const steps = form.querySelectorAll(".step");
@@ -34,7 +34,7 @@ function form() {
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            // Check if any required fields are empty
+            
             const requiredInputs = document.querySelectorAll("input[required], select[required], textarea[required]");
             let isFormValid = true;
 
@@ -45,17 +45,17 @@ function form() {
             });
 
             if (isFormValid) {
-                // Form is valid, process the submission (you can add your logic here)
+                
                 alert("Form submitted successfully!");
                 window.location.replace("../webpages/adoptionComplete.html");
             } else {
-                // Form is not valid, show an error alert and go back to the first step
+                
                 alert("Form is not complete. Please fill in all required fields.");
                 showStep(1);
             }
         });
 
-        showStep(1); // Show the first step initially
+        showStep(1); 
     });
 }
 

@@ -12,24 +12,29 @@ button {
    border-radius: 20px;
    border: transparent;
    background-color: pink;
+   margin-top: 50px;
 }
 .volImages img{
     border: 1px solid palevioletred !important;
     border-radius: 4px;
     padding: 19px;
     box-shadow: 0 4px 8px 0 rgba(203, 51, 150, 0.2), 0 6px 20px 0 rgba(222, 19, 151, 0.19);
-    width: 100%
-
-}
-img{
     width: 100%;
     object-fit: cover;
+    height: 300px;
+
 }
 img:hover {
     transform: scaleX(-1);
   }
+  h5, h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-
+.volImages{
+    margin-bottom: 200px;
+}
 
 
 

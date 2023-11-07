@@ -18,28 +18,21 @@
     font-size: 16px;
 }
 .image-container {
+  height: 100vh;
     width: 100%;
     position: relative;
     text-align: center;
     overflow: hidden;
-    
 
-   
-    
   }
 .image-container img{
-  
-    width: 100%;
-    height: auto;
-    object-fit: cover;
     display: block;
-       
+    opacity: 0.95;
+    background-color: #c8eaff;
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
   }
-      
-
-
-
-
 
       @media (min-width: 768px) {
         .text-overlay h1 {
@@ -50,8 +43,4 @@
           font-size: 20px; /* Adjust font size for larger screens */
         }
       
-        .image-container img {
-          max-width: 90%;
-          height: auto;
-        }
       }
