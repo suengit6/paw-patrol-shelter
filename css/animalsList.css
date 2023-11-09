@@ -11,6 +11,9 @@
 .card a{
     text-decoration: none;
 }
+.card img{
+    height: 300px;
+}
 .card button{
     border: transparent;
     background-color: pink;

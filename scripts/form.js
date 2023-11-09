@@ -29,7 +29,9 @@ function form() {
                 const stepNumber = this.getAttribute("data-step");
                 showStep(stepNumber);
             });
-        });
+        }); 
+        
+        // number
 
         form.addEventListener("submit", function (e) {
             e.preventDefault();
@@ -53,6 +55,7 @@ function form() {
                 alert("Form is not complete. Please fill in all required fields.");
                 showStep(1);
             }
+            //form validation 
         });
 
         showStep(1); 

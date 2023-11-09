@@ -11,10 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lato:ital,wght@0,700;1,400&family=Syne:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Inter:wght@400;600&family=Irish+Grover&display=swap" rel="stylesheet">
 
     <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/8d8079de50.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -32,7 +34,7 @@
         
                 <a class="navbar-brand m-0" href="#">
                     <img src="images/pawpatrol.png" height="70px" width="70px">
-                    <span>PawPatrol</span>
+                     <span>Paw Patrol</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,6 +54,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="webpages/about.html">About</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="webpages/contactUs.html">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -66,7 +71,7 @@
         <h3>Adopt me today</h3>
         <h3>Be my best friend!</h3>
         <div class="buttonCont buttonCont1">
-            <a href="webpages/animalsList.html"><button>Adopt</button></a>
+            <a href="webpages/animalsList.html"><button style="background-color: rgb(255, 116, 202);">Adopt</button></a>
         </div>
     </div>  
 
@@ -80,7 +85,9 @@
             <h3>Support our home</h3>
             <h3>Change our life</h3>
             <div class="buttonCont buttonCont2">
-                <a href="#"><button>Donate</button></a>
+                <a href="webpages/donate.html">
+                    <button style="background-color: rgb(116, 169, 255);">Donate</button>
+                </a>
             </div>
         </div>
     </div>
@@ -93,83 +100,92 @@
             <h3>Play with us</h3>
             <h3>We need you!</h3>
             <div class="buttonCont buttonCont3">
-                <a href="#"><button>Volunteer</button></a>
+                <a href="webpages/volunteer.html"><button style="background-color: rgb(255, 116, 70);">Volunteer</button></a>
             </div>
         </div>
     </div>
 
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/cat2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                    <h5>My best animal friend</h5>
-                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
-                </div>
+    <div class="stories" style="background-color: pink;">
+        <h1 class="text-center pt-5" style ="color:gray;">Featured Stories</h1>
+        <div class="container py-5">
+            <div class="row justify-content-evenly col-lg-12">
+                <div class="card px-0 mb-2 shadow" style="width: 18rem;">
+                    <img src="images/cat1.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+        
+                  <div class="card px-0 mb-2 shadow" style="width: 18rem;">
+                    <img src="images/cat2.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+        
+                  <div class="card px-0 mb-2 shadow" style="width: 18rem;">
+                    <img src="images/catdog1.jfif" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
             </div>
-            <div class="carousel-item">
-                <img src="images/catdog1.jfif" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                    <h5>Cat or Dog?</h5>
-                    <p>Deciding whether to adopt a cat or a dog is a significant decision and should be based on your lifestyle, preferences, and what you can provide for a pet.</h4></p>
-                </div>
             </div>
-            <div class="carousel-item">
-                <img src="images/dog3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                    <h5>How to Train a Dog?</h5>
-                    <p>1. Start Early: Begin when your dog is a puppy for easier training.</p>
-                    <p>2. Use Treats and Praise: Reward good behavior with treats and praise.</p>
-                    <p>3. Consistency: Always use the same words and commands.</h4></p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
-    <div class="footerCont container-fluid p-0">
+    
+    <div class="footerCont container-fluid p-0" style="background-image: linear-gradient(to right, rgb(253, 116, 255) , rgb(129, 198, 255));">
         <footer class="footer">
             <div class="list-container social">
                 <ul class=" list">
-                    <li><a href="https://www.facebook.com">Facebook</a></li>
-                    <li><a href="https://www.twitter.com">Twitter</a></li>
-                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                   <h3>Social Media</h3>
+                    <li><i class="fa-brands fa-square-facebook fa-beat fa-lg" style="color: #4D81DB;"></i><a href="https://www.facebook.com"></a></li>
+                    <li><i class="fa-brands fa-twitter fa-beat fa-lg" style="color: #4D81DB;"></i><a href="https://www.twitter.com"></a></li>
+                    <li><i class="fa-brands fa-square-instagram fa-beat fa-lg" style="color: #1f2551;"></i><a href="https://www.instagram.com"></a></li>
+                    <li><i class="fa-brands fa-telegram fa-beat fa-lg"></i><a href="https://www.telegram.com/"></a></li>
+                    <li><i class="fa-brands fa-whatsapp fa-beat fa-lg"></i><a href="https://www.whatsapp.com/"></a></li>
                 </ul>
+                
             </div>
+
     
             <div class="list-container nav-links">
                 <ul class="list">
+                    <h3>Quick Links</h3>
                     <li><a href="webpages/about.html">About</a></li>
                     <li><a href="webpages/animalsList.html">Adopt</a></li>
                     <li><a href="webpages/donate.html">Donate</a></li>
                     <li><a href="webpages/volunteer.html">Volunteer</a></li>
                 </ul>
+
             </div>
     
             <div class="list-container address">
                 <ul class=" list">
-                    <li>1200 Jorge Bocobo ST.</li>
-                    <li>United Nation</li>
-                    <li>Ermita 679, 1000</li>
+                    <h3>Visit Us</h3>
+                    <p>Purok 3 Pamatawan <br> Subic,Zambales 2209</p>
                 </ul>
             </div>
+            
+
+            <hr class="mb-5">
+
+            <div class="text-center mb-2">
+                <p>
+                    <a href="index.html">
+                        <strong class="text-warning-emphasis">&copy; 2021 Paw Patrol Shelter</strong>
+                    </a>
+                </p>
+            </div>
+
+            
+
         </footer>
     </div>
+    
 
 
     <!-- BOOTSTRAP JS -->

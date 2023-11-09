@@ -1,10 +1,9 @@
 .footer {
     background-size: cover;
     color: white;
-    padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    align-items: start;
 }
 .footer img{
     position: absolute;
@@ -17,11 +16,7 @@
     align-items: center;
 }
 .footerCont{
-    background-color: rgb(255, 61, 129);
-    background-image: url(../images/pawpatrol.png);
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: bottom left;
+    background-image: linear-gradient(to right, rgb(255, 116, 202) , rgb(129, 198, 255));
 }
 .list-container ul{
     height: 100%;
@@ -37,10 +32,12 @@
 
 .social ul {
     text-align: center;
+    margin: 20px;
 }
 
 .nav-links ul {
     text-align: center;
+    margin: 20px;
 }
 
 .nav-links li {
@@ -48,18 +45,19 @@
 }
 
 .address ul {
-    text-align: center;
+    font-family: 'Lato';
+    margin-top: 20px;
+    
 }
+/* .address p{
+    margin: 20px;
+} */
 .list a{
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
-@media screen and (max-width: 768px) {
-    .footer{
-        height: 350px;
-    }
-    .footerCont{
-        background-size: 100px;
-        background-position: bottom left;
-    }
+.footer h3{
+    font-family: 'Georgia';
+    font-weight: 900;
+    font-style: italic;
 }
