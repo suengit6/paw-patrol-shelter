@@ -3,6 +3,7 @@
     margin-bottom: 5vh;
 }
 .volunteerCont h1{
+    font-family: 'Lato';
     margin-top: 50px;
 }
 
@@ -28,6 +29,7 @@ img:hover {
     transform: scaleX(-1);
   }
   h5, h4 {
+    font-family: 'lato';
     margin-top: 20px;
     margin-bottom: 20px;
   }
