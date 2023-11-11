@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawPatrol Shelter</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/animalsList.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="icon" type="image/x-icon" href="../images/pawpatrol.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lato:ital,wght@0,700;1,400&family=Syne:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Inter:wght@400;600&family=Irish+Grover&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d8079de50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="homepage container-fluid">
+
+        <div class="header ">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../images/pawpatrol.png" height="70px" width="70px">
+                        <span>PawPatrol</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../webpages/animalsList.html">Adopt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../webpages/donate.html">Donate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../webpages/volunteer.html">Volunteer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../webpages/donate.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../webpages/contactUs.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 mb-4 d-flex justify-content-center">
+                            <button id="dog" class="rounded px-5 py-2" onclick="filterDog()"style="background-color: pink;">Dogs</button>
+                            <button id="cat" class="rounded px-5 py-2" onclick="filterCat()">Cats</button>
+                </div>
+                <div class="col-12">
+                    <ul class="list-unstyled row m-0 justify-content-lg-evenly justify-content-lg-center align-items-stretch">
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/Dog.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Mika</h2>
+                                    <h4> BREED: Dushand <br>
+                                        AGE: 2 years old <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 2 kg <br>
+                                        COLOR: Black <br>
+                                        SIZE: Medium <br>
+                                    </h4>
+                                    
+                                     <p class="card-text">
+                                    
+                                        This playful mediumish sized pup has certainly flirted her way in our hearts and shortly yours! She's got energy thats contagious and  that won't quit. Looking for a large personality that fits into the small/medium Co-Captain chair next to you, then Mikas's your gal!
+                                    </p>
+                                        <a class="stretched-link" href="../webpages/adoptionForm.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/dog9.png" class="card-img-top">
+                                <div class="card-body">
+                                    <h2> Bill</h2>
+                                    <h4> BREED: Boxer <br>
+                                        AGE: 2 years old <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 10 kg <br>
+                                        COLOR: Tan <br>
+                                        SIZE: Big <br></h4>
+                                    <p class="card-text">
+                                        Hey! My name is Bill and I’m looking for a family to adopt me. I would love to be apart of a family with kids to play with, or another calm dog my size. I like to play, but I can get overwhelmed with higher energy dogs.
+                                    </p>
+                                    <a class="stretched-link" href="../webpages/adoptionForm.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/dog1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Deekan</h2>
+                                    <h4> BREED: French Bulldog <br>
+                                        AGE: 2 years old <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 10 kg <br>
+                                        COLOR: Tan <br>
+                                        SIZE: Big <br></h4>
+                                    <p class="card-text">
+                                        My name is Deekan and I am looking for a home to call my own. I would do best in a home that has no other pets and is pretty laid back. I also do have specific needs to make my home successful!! I'm a bit timid with new people, but I warm up fairly quickly and am a huge lover! I love to sit right next to peoples feet, and if you'll let me, I like to be a little lap dog.
+                                    </p>
+                                        <a class="stretched-link" href="../webpages/adoptionForm.html">
+
+                                        </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/dog3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Gary</h2>
+                                    <h4> BREED: Spaniel Calvier <br>
+                                        AGE: 2 years old <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 10 kg <br>
+                                        COLOR: Tan <br>
+                                        SIZE: Big <br></h4>
+                                    <p class="card-text">
+                                        Gary is a sweet and awkward pup who is still figuring out the world. He loves to be outside playing with other pups or taking a stroll through the neighbourhood. Gary is a very curious boy which sometimes leads to mischief so keeping him busy is a must. Give him a frozen Kong or bone and he’ll be busy for hours! He is highly food motivated which makes teaching him new tricks easy.
+                                    </p>
+                                        <a class="stretched-link" href="../webpages/adoptionForm.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/dog4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Moka</h2>
+                                    <h4> BREED: ShihTzu <br>
+                                        AGE: 2 years old <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 10 kg <br>
+                                        COLOR: Tan <br>
+                                        SIZE: Big <br></h4>
+                                    <p class="card-text">
+                                        I am an almost 10 year old female, and I am the sweetest ever! I can be a bit shy with new surroundings, but handle them well as long as I'm around someone who's able to give me some confidence. Considering I'm getting old, I need some help with getting around. I love all other animals, and all the attention!
+                                    </p>
+                                    <a class="stretched-link" href="../webpages/adoptionForm.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/dog5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Rhett</h2>
+                                    <h4> BREED: Boxer <br>
+                                        AGE: Puppy <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 10 kg <br>
+                                        COLOR: Tan <br>
+                                        SIZE: Big <br></h4>
+                                    <p class="card-text">
+                                        Hi I'm Rhett! Once my family finds me, I'm sure I'll be a huge cuddle bug. I have so much to offer my family, and can provide you with unconditional love, attention and protection. Please consider coming to visit me, while also keeping in mind that I'll be a bit standoffish at first before becoming your best friend. (:
+                                    </p>
+                                    <a class="stretched-link" href="../webpages/adoptionForm.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/dog6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Akila</h2>
+                                    <h4> BREED: Pomeranian <br>
+                                        AGE: 2 years old <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 10 kg <br>
+                                        COLOR: Tan <br>
+                                        SIZE: Big <br></h4>
+                                    <p class="card-text">
+                                        Akila is a very quick learner. He loves to play in the yard and zoom around. He is still learning about city life but does well on walks and recovers fast if something spooks her. He is anxious and untrusting of men. We believe this is something he can overcome with training.
+                                    </p>
+                                    <a class="stretched-link" href="../webpages/adoptionForm.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/dog7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Precious</h2>
+                                    <h4> BREED: Mixed <br>
+                                        AGE: 2 years old <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 10 kg <br>
+                                        COLOR: Tan <br>
+                                        SIZE: Big <br></h4>
+                                    <p class="card-text">
+                                        Precious is a very sweet little girl. She loves scritches when you get home and will lift her paws for a hug (once she is used to you). Precious loves napping, playing with treat balls/ toys, and going for shorter walks (more of a sniff fest in the park really). She does scare or startle easily and is intimidated by new situations or challenges (ie: stairs in and out from the patio, getting on/ off an elevator).
+                                    </p>
+                                    <a class="stretched-link" href="../webpages/adoptionForm.html"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-lg-4 col-12 mb-5">
+                            <div class="card shadow-sm h-100">
+    
+                                <img src="../images/ppspics/dog8.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h2> Guy Smiley</h2>
+                                    <h4> BREED: Mixed <br>
+                                        AGE: 2 years old <br>
+                                        GENDER: Female <br>
+                                        WEIGHT: 10 kg <br>
+                                        COLOR: Tan <br>
+                                        SIZE: Big <br></h4>
+                                    <p class="card-text">
+                                        Guy Smiley is one of the Fur-Get Me Not's. He is showing improvement each day and becoming more and more comfortable with people. Being in a home environment would help him to see what being a family dog is all about and help get him ready for adoption.
+                                    </p>
+                                    <a class="stretched-link" href="../webpages/adoptionForm.html"></a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footerCont container-fluid p-0" style="background-image: linear-gradientill;(to right, rgb(253, 116, 255) , rgb(129, 198, 255));">
+        <footer class="footer">
+            <div class="list-container social">
+                <ul class=" list">
+                   <h3>Social Media</h3>
+                    <li><i class="fa-brands fa-square-facebook fa-beat fa-lg" style="color: #4D81DB;"></i><a href="https://www.facebook.com"></a></li>
+                    <li><i class="fa-brands fa-twitter fa-beat fa-lg" style="color: #4D81DB;"></i><a href="https://www.twitter.com"></a></li>
+                    <li><i class="fa-brands fa-square-instagram fa-beat fa-lg" style="color: #1f2551;"></i><a href="https://www.instagram.com"></a></li>
+                    <li><i class="fa-brands fa-telegram fa-beat fa-lg"></i><a href="https://www.telegram.com/"></a></li>
+                    <li><i class="fa-brands fa-whatsapp fa-beat fa-lg"></i><a href="https://www.whatsapp.com/"></a></li>
+                </ul>
+                
+            </div>
+
+    
+            <div class="list-container nav-links">
+                <ul class="list">
+                    <h3>Quick Links</h3>
+                    <li><a href="../webpages/about.html">About</a></li>
+                    <li><a href="../webpages/animalsList.html">Adopt</a></li>
+                    <li><a href="../webpages/donate.html">Donate</a></li>
+                    <li><a href="../webpages/volunteer.html">Volunteer</a></li>
+                </ul>
+
+            </div>
+    
+            <div class="list-container address">
+                <ul class=" list">
+                    <li><h3>Visit Us</h3></li>
+                    <li><p>Purok 3 Pamatawan <br> Subic,Zambales 2209</p></li>
+                </ul>
+            </div>
+            
+        </footer>
+        <hr>
+        <a href="index.html">
+            <p class="text-center m-0 pb-3 ">Copyright 2023 PawPatrol Shelter</p>
+        </a>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="../scripts/filter.js"></script>
+
+</body>
+
+</html>
